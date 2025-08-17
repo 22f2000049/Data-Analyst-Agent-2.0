@@ -1,88 +1,139 @@
-#Data Analyst Agent 2.0
+# ⚡ Data Analyst Agent 2.0 — Your AI-Powered Data Companion  
+> Smarter, faster, and more intuitive analysis of your datasets using **Generative AI + Python magic.**  
+> Repository: *Insert your GitHub repo link here*  
 
-An interactive, autonomous data analysis tool powered by Large Language Models (LLMs). The agent can take datasets or natural language questions, generate Python code for analysis, execute it safely, and display results directly in the browser.
+---
 
-#📖 Overview
+## 📌 What Is This?  
+Meet **Shivania Data Analyst Agent 3.0** — an AI-driven assistant that eliminates tedious data crunching.  
+Upload your dataset + queries, and instantly get:  
+✅ Visual reports  
+✅ AI-generated insights  
+✅ Automated workflows  
 
-The Data Analyst Agent 2.0 is designed to make data analysis accessible and automated.
-It supports multiple data formats, generates rich visualizations, and can even scrape the web to fetch required data. The project includes both local setup and containerized deployment options.
+Perfect for:  
+- Analysts 🧾  
+- Researchers 🔬  
+- Startups & Businesses 📈  
+- Anyone who loves turning raw data into knowledge  
 
-#✨ Features
+---
 
-Interactive Web Interface – Upload datasets and questions with ease.
+## ✨ Key Highlights  
 
-LLM-Powered Analysis – Natural language queries are translated into Python code automatically.
+| Feature                  | Why It’s Awesome 🚀 |
+|---------------------------|----------------------|
+| 🤖 AI-Powered Insights    | Uses Google’s Generative AI to “understand” your data |
+| 📊 Rich Visualizations    | Generates plots with **Seaborn & Matplotlib** |
+| 🌍 Web Scraper Mode       | Fetch live data directly from URLs |
+| 📂 Multi-Format Friendly  | Accepts CSV, Excel, JSON, Parquet, or TXT |
+| 🔄 Ask Many at Once       | Batch processing for multiple questions |
+| 🖥️ Simple-to-Use Interface | Beginner friendly, no steep learning curve |
+| ⚡ Super-Fast Execution   | Optimized for speed + real-time feedback |
 
-Multi-format Dataset Support – CSV, Excel, JSON, and Parquet supported.
+---
 
-Automated Web Scraping – Fetches online data when no dataset is provided.
+## 🚀 Getting Started  
 
-Rich Visualizations – Generates plots and charts for insights.
+### 1️⃣ Clone the Repo  
+```bash
+git clone https://github.com/your-username/shivania-data-analyst-agent.git  
+cd shivania-data-analyst-agent
+```
 
-Containerized Deployment – Dockerfile included for smooth deployment.
-
-#🛠️ Technology Stack
-
-FastAPI – Backend framework
-
-LangChain – AI integration
-
-Pandas – Data processing
-
-Vanilla JS + Tailwind CSS – Frontend UI
-
-Chart.js – Visualizations
-
-#🔄 Workflow
-
-User Input – Upload questions and (optionally) a dataset.
-
-LLM Code Generation – The agent writes Python analysis code.
-
-Secure Execution – Code runs in a sandboxed environment.
-
-Results & Visualization – Answers and charts are returned to the browser.
-
-🚀 Getting Started
-Local Setup
-
-Set up your environment
-
-# Create a .env file and add:
-GOOGLE_API_KEY="your-gemini-api-key-here"
-
-
-Install dependencies
-
+### 2️⃣ Install Requirements  
+```bash
 pip install -r requirements.txt
+```
 
+### 3️⃣ Configure API Keys  
+Create a `.env` file inside the root folder:  
+```ini
+GEMINI_API_KEY=your_google_api_key  
+LLM_TIMEOUT_SECONDS=240  
+```
 
-Run the app
+### 4️⃣ Start the Application  
+```bash
+python -m uvicorn app:app --reload
+```
 
-uvicorn app:app --host 0.0.0.0 --port 8000
+Now open [**http://localhost:8000/**](http://localhost:8000/) in your browser 🌐  
 
+---
 
-Visit: http://localhost:8000
+## 🧑‍💻 How It Works  
 
-Docker Setup
+1. **Write Your Questions**  
+   Create a `.txt` file with queries like:  
+   - What’s the revenue growth month-over-month?  
+   - Find correlation between Age and Income  
+   - Show most profitable products  
 
-Build the Docker image
+2. **Upload Dataset + Questions File**  
+- Dataset (optional) → CSV, Excel, JSON, Parquet, or TXT  
+- Questions file (required) → Plain text  
 
-docker build -t data-analyst-agent .
+3. **Voilà!**  
+- AI processes the queries  
+- Generates insights + summaries  
+- Builds neat visualizations  
 
+---
 
-Run the container
+## 🛠 Tech Behind the Scenes  
 
-docker run -p 8000:8000 --env-file .env data-analyst-agent
+### Backend  
+- FastAPI ⚡ → High-performance web server  
+- LangChain 🧠 → Orchestrates LLM interactions  
+- Google Generative AI ✨ → Core AI engine  
+- Pandas + NumPy 📊 → Data wrangling made smooth  
+- Seaborn + Matplotlib 🎨 → Clean, insightful charts  
 
-📊 Example Stats
+### Frontend  
+- HTML5 + CSS + JavaScript  
+- Bootstrap-inspired modern UI  
 
-Python Version: 3.12
+---
 
-Supported Formats: 4+
+## 🔧 API Blueprint  
 
-Deployment Options: 2 (Local & Docker)
+| Method | Endpoint  | Purpose |
+|--------|-----------|----------|
+| `GET`  | `/`       | Access web app |
+| `POST` | `/api`    | Submit dataset + questions |
+| `GET`  | `/summary`| App diagnostics & summaries |
 
-#📜 License
+---
 
-This project is licensed under the MIT License.
+## 📂 File Support  
+
+| Format | Extensions |
+|--------|------------|
+| CSV    | `.csv`     |
+| Excel  | `.xlsx`, `.xls` |
+| JSON   | `.json`    |
+| Parquet| `.parquet` |
+| Text   | `.txt`     |
+
+---
+
+## 🎯 Where Can You Use This?  
+
+- 📈 Business Strategy – Sales, KPIs, forecasts  
+- 🔬 Research – Data exploration, hypothesis validation  
+- 🤖 Data Science – Quick EDA, anomaly detection  
+- 📊 Reporting – Automated dashboards  
+
+---
+
+## 🔒 Security First  
+- ✅ No cloud storage → All data stays local  
+- ✅ API keys kept safe via `.env`  
+- ✅ Configurable CORS policy for production use  
+
+---
+
+## 📜 License  
+
+Licensed under **MIT** – free for personal & commercial use.  
