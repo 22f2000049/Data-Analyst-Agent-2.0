@@ -5,7 +5,7 @@
 ---
 
 ## 📌 What Is This?  
-Meet **Shivania Data Analyst Agent 3.0** — an AI-driven assistant that eliminates tedious data crunching.  
+Meet **Data Analyst Agent 2.0** — an AI-driven assistant that eliminates tedious data crunching.  
 Upload your dataset + queries, and instantly get:  
 ✅ Visual reports  
 ✅ AI-generated insights  
