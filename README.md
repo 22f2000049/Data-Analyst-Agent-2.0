@@ -1,13 +1,13 @@
-Data Analyst Agent 2.0
+#Data Analyst Agent 2.0
 
 An interactive, autonomous data analysis tool powered by Large Language Models (LLMs). The agent can take datasets or natural language questions, generate Python code for analysis, execute it safely, and display results directly in the browser.
 
-📖 Overview
+#📖 Overview
 
 The Data Analyst Agent 2.0 is designed to make data analysis accessible and automated.
 It supports multiple data formats, generates rich visualizations, and can even scrape the web to fetch required data. The project includes both local setup and containerized deployment options.
 
-✨ Features
+#✨ Features
 
 Interactive Web Interface – Upload datasets and questions with ease.
 
@@ -21,7 +21,7 @@ Rich Visualizations – Generates plots and charts for insights.
 
 Containerized Deployment – Dockerfile included for smooth deployment.
 
-🛠️ Technology Stack
+#🛠️ Technology Stack
 
 FastAPI – Backend framework
 
@@ -33,7 +33,7 @@ Vanilla JS + Tailwind CSS – Frontend UI
 
 Chart.js – Visualizations
 
-🔄 Workflow
+#🔄 Workflow
 
 User Input – Upload questions and (optionally) a dataset.
 
@@ -83,6 +83,6 @@ Supported Formats: 4+
 
 Deployment Options: 2 (Local & Docker)
 
-📜 License
+#📜 License
 
 This project is licensed under the MIT License.
